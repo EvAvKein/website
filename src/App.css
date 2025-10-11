@@ -1,42 +1,104 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	min-height: 100vh;
+	min-width: 22.5rem;
+	/* 360px divided by 16 (usual default font size) is 22.5rem */
+}
+
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+	min-height: inherit;
+	min-width: inherit;
+
+	font-family: "Share Tech Mono", monospace;
+
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+	--textColor: #d4d4d4;
+	--filterToTextColor: brightness(0) saturate(100%) invert(92%) sepia(0%) saturate(1234%) hue-rotate(198deg) brightness(96%) contrast(87%);
+	--textSubColor: #a8a8a8;
+	--filterToTextSubColor: brightness(0) saturate(100%) invert(43%) sepia(0%) saturate(1102%) hue-rotate(190deg) brightness(100%) contrast(82%);
+	--backgroundColor: #1e1e1e;
+	--filterToBackgroundColor: brightness(0) saturate(100%) invert(9%) sepia(0%) saturate(0%) hue-rotate(266deg) brightness(99%) contrast(94%);
+	--backgroundSubColor: #333333;
+	--filterToBackgroundSubColor: brightness(0) saturate(100%) invert(14%) sepia(0%) saturate(1271%) hue-rotate(135deg) brightness(98%) contrast(84%);
+	--accentColor: #006ace;
+	--filterToAccentColor: brightness(0) saturate(100%) invert(23%) sepia(76%) saturate(2677%) hue-rotate(196deg) brightness(98%) contrast(101%);
+	--highlightColor: #f5cb32;
+	--filterToHighlightColor: brightness(0) saturate(100%) invert(80%) sepia(40%) saturate(769%) hue-rotate(356deg) brightness(97%) contrast(97%);
+
+	background-color: var(--backgroundColor);
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+:focus {
+	outline: none;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+img {
+	pointer-events: none;
+	user-select: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0;
 }
 
-.card {
-  padding: 2em;
+button,
+a,
+summary {
+	cursor: pointer;
 }
 
-.read-the-docs {
-  color: #888;
+button,
+a,
+summary,
+input,
+textarea {
+	font-size: inherit;
+	font-family: inherit;
+	border: none;
+}
+
+::-webkit-scrollbar {
+	width: 1rem;
+	height: 1rem;
+}
+
+::-webkit-scrollbar-track {
+	border: 0.05rem solid color-mix(in srgb, var(--textColor), transparent 80%);
+	background: transparent;
+}
+
+::-webkit-scrollbar-corner {
+	background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: transparent;
+	transition: background-color 350ms;
+	/* TODO: implement custom scrollbar component, transitions on default one don't work */
+}
+
+:hover::-webkit-scrollbar-thumb {
+	background-color: color-mix(in srgb, var(--textColor), transparent 82.5%);
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background-color: color-mix(in srgb, var(--textColor), transparent 77.5%);
+}
+
+::-webkit-scrollbar-thumb:active {
+	background-color: color-mix(in srgb, var(--textColor), transparent 65%);
 }
