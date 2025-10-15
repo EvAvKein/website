@@ -1,7 +1,6 @@
 {
-	"printWidth": 80,
+	"printWidth": 100,
 	"useTabs": true,
 	"bracketSpacing": false,
-	"svelteIndentScriptAndStyle": true,
-	"svelteSortOrder": "options-markup-scripts-styles"
+	"singleAttributePerLine": false
 }
