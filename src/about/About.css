@@ -16,7 +16,7 @@
 		display: flex;
 		flex-direction: column;
 		margin-inline: auto;
-		padding: 1.5em 1.5em;
+		padding: 0.5em 1.5em 1em;
 		gap: 1.5em;
 
 		#who,
@@ -64,10 +64,8 @@
 			align-items: unset;
 			grid-template-areas:
 				"who what"
-				"where where"
-				"email email";
+				"where where";
 			grid-template-columns: 1fr 1fr;
-			grid-template-rows: auto auto 1fr;
 			padding: 1em 2.5em 1.5em;
 			gap: 2em;
 

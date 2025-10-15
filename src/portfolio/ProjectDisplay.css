@@ -1,6 +1,7 @@
 .projDisplay {
 	display: block;
 	color: var(--textColor);
+	background-color: var(--backgroundSubColor);
 	height: 20em; /* 16:9 */
 	width: 36em;
 	position: relative;
@@ -13,11 +14,21 @@
 	> video {
 		cursor: inherit;
 		position: absolute;
-		height: inherit;
-		width: inherit;
 		top: 0;
 		left: 0;
 		transform: inherit;
+	}
+
+	> video {
+		height: inherit;
+		width: inherit;
+	}
+
+	> img {
+		height: 100%;
+		width: 100%;
+		object-fit: cover;
+		object-position: center;
 	}
 
 	.projInfo {
