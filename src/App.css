@@ -1,3 +1,7 @@
+:root {
+	scroll-behavior: smooth;
+}
+
 * {
 	box-sizing: border-box;
 }
@@ -43,6 +47,7 @@ body {
 	min-width: inherit;
 	background-color: var(--backgroundColor);
 	transition: font-size 300ms ease;
+	scroll-behavior: smooth;
 
 	:focus {
 		outline: none;
