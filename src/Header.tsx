@@ -3,16 +3,16 @@ import "./Header.css";
 function Header() {
 	return (
 		<header>
-			<a href="/">
+			<a href="#">
 				<img
 					src="/src/assets/eak.svg"
 					alt="The initials E.A.K, with E and K rotated and aligned to neatly overlap with the A inbetween"
 				/>
 			</a>
-			<a href="/#portfolio">
+			<a href="#portfolio">
 				<div>PORTFOLIO</div>
 			</a>
-			<a href="/#contact">
+			<a href="#contact">
 				<div>CONTACT</div>
 			</a>
 		</header>
