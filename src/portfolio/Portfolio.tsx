@@ -7,7 +7,7 @@ function Portfolio() {
 				<h2>Projects</h2>
 				<section id="projects">
 					<ProjectDisplay
-						title="MiniRT"
+						title="MiniRayTracer"
 						tagline="Raytracing your scenes from scratch: Texture mapping, multi-threaded incremental rendering, live movement and object manipulation, and more!"
 						imgSrc="https://raw.githubusercontent.com/EvAvKein/hive_minirt/refs/heads/main/README_assets/eve_wallpaper.png"
 						imgAlt="Colorful scene with patterned spheres, cylinders, planes, a cone, and a light source in the center shedding light on all of them"
@@ -18,7 +18,7 @@ function Portfolio() {
 					/>
 					<ProjectDisplay
 						title="Planet Guardian"
-						tagline="A game-jam award winner about protecting your planet from asteroids and temperatures!"
+						tagline="A game-jam award winner: Protect your planet from asteroids and temperatures!"
 						imgSrc="/src/assets/projects/planetGuardian.png"
 						imgAlt="Colorful scene with patterned spheres, cylinders, planes, a cone, and a light source in the center shedding light on all of them"
 						vidSrc="/src/assets/projects/planetGuardian_compilation.mp4"
@@ -38,7 +38,7 @@ function Portfolio() {
 					/>
 					<ProjectDisplay
 						title="Philosophers"
-						tagline="Simulating the Dining Philosophers problem, with manual multi-threading synchronization through mutexes"
+						tagline="Simulating the Dining Philosophers problem: Manual multi-threading synchronization with mutexes"
 						imgSrc="/src/assets/projects/philosophers.png"
 						imgAlt="Colorful scene with patterned spheres, cylinders, planes, a cone, and a light source in the center shedding light on all of them"
 						vidSrc="/src/assets/projects/philosophers_compilation.mp4"
