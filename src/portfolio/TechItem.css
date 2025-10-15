@@ -1,0 +1,41 @@
+.techItem {
+	position: relative;
+	background-color: transparent;
+	padding: 0.75em;
+
+	img {
+		height: 2.75em;
+		width: 2.75em;
+		filter: drop-shadow(0 0 0.3em black);
+		transition: all 250ms ease-in-out;
+		vertical-align: bottom; /* removes unduely-added space (see https://stackoverflow.com/a/27999850) */
+	}
+
+	div {
+		position: absolute;
+		font-size: 0.9em;
+		top: 70%;
+		left: 50%;
+		transform: translateX(-50%);
+		color: var(--textColor);
+		background-color: var(--backgroundColor);
+		border: 0.05em solid color-mix(in srgb, var(--textSubColor), transparent 66%);
+		font-weight: bold;
+		padding: 0.25em;
+		opacity: 0;
+		transition: all 250ms ease-in-out;
+	}
+
+	&.selected img,
+	&:hover img,
+	&:focus-within img {
+		transform: scale(0.8) translateY(-0.35em);
+		filter: drop-shadow(0 0 0.35em var(--highlightColor));
+	}
+
+	&.selected div,
+	&:hover div,
+	&:focus-within div {
+		opacity: 1;
+	}
+}

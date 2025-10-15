@@ -1,0 +1,84 @@
+.projDisplay {
+	display: block;
+	color: var(--textColor);
+	height: 20em; /* 16:9 */
+	width: 36em;
+	position: relative;
+	border-radius: 0.5em;
+	padding-bottom: 5em;
+	overflow: hidden;
+	transition: all 300ms;
+
+	> img,
+	> video {
+		cursor: inherit;
+		position: absolute;
+		height: inherit;
+		width: inherit;
+		top: 0;
+		left: 0;
+		transform: inherit;
+	}
+
+	.projInfo {
+		position: absolute;
+		background-color: color-mix(in srgb, var(--backgroundColor) 60%, #0000);
+		box-shadow: color-mix(in srgb, var(--backgroundColor) 60%, #0000) 0 -0.15em 0.3em;
+		padding: 1.5em 1em;
+		display: flex;
+		align-items: center;
+		bottom: 0;
+		left: 0;
+		height: 20%;
+		width: 100%;
+		transition: all 300ms;
+
+		h3 {
+			font-size: 2em;
+		}
+
+		p {
+			font-size: 1em;
+		}
+
+		.projTechList {
+			width: inherit;
+			justify-content: center;
+			font-size: 0.75em;
+		}
+	}
+
+	video,
+	p,
+	.projTechList {
+		display: none;
+	}
+
+	&:hover,
+	&:focus {
+		transform: scale(1.025);
+		filter: drop-shadow(0 0 0.35em var(--highlightColor));
+
+		.projInfo {
+			flex-direction: column;
+			height: 45%;
+			justify-content: space-around;
+			background-color: color-mix(in srgb, var(--backgroundColor) 72%, #0000);
+			padding: 0.75em 1.5em 0;
+		}
+		.projTechList {
+			display: flex;
+			margin-top: -0.5em;
+		}
+
+		video,
+		p {
+			display: unset;
+		}
+
+		> img,
+		h3 {
+			display: none;
+		}
+	}
+}
