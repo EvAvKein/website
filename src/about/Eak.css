@@ -1,0 +1,41 @@
+#eak {
+	margin-block: 0.35em;
+	font-size: clamp(2.5em, 12vw, 5.5em);
+	font-family: "Share Tech Mono", monospace;
+	font-weight: bold;
+	color: var(--accentColor);
+	user-select: none;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 0 0.3em;
+	transition:
+		gap 750ms ease-in-out,
+		height 350ms;
+
+	span {
+		white-space: nowrap;
+
+		.extra {
+			display: inline-block;
+			max-width: 2.5em;
+			opacity: 1;
+			transition:
+				max-width 750ms ease-in,
+				opacity 500ms ease-out 250ms;
+		}
+	}
+
+	&:hover,
+	&.collapsed {
+		gap: 0;
+
+		.extra {
+			max-width: 0;
+			opacity: 0;
+			transition:
+				max-width 550ms ease-out 100ms,
+				opacity 400ms ease-out;
+		}
+	}
+}

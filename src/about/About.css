@@ -1,0 +1,104 @@
+@counter-style whoList {
+	system: fixed;
+	symbols: "👨‍🦲" "🌱" "🧠" "🧑‍💻";
+	suffix: " ";
+}
+
+@counter-style whatList {
+	system: fixed;
+	symbols: "💻" "🤝" "🫂" "🧶";
+	suffix: " ";
+}
+
+#aboutWrapper {
+	#aboutGrid {
+		max-width: 80em;
+		display: flex;
+		flex-direction: column;
+		margin-inline: auto;
+		padding: 1.5em 1.5em;
+		gap: 1.5em;
+
+		#who,
+		#what,
+		#where {
+			background-color: var(--backgroundSubColor);
+			padding: 1.25em 1.75em 1.75em;
+			border-radius: 0.5em;
+			box-shadow: 0 0 0.5em 0.1em black;
+
+			h2 {
+				font-size: 2.5em;
+				margin-bottom: 0.25em;
+			}
+
+			ul {
+				margin: 0;
+
+				li + li {
+					margin-top: 0.75em;
+				}
+
+				li div {
+					color: var(--textSubColor);
+					font-size: 0.75em;
+					margin-top: 0.2em;
+				}
+			}
+		}
+
+		#who ul {
+			list-style-type: whoList;
+		}
+
+		#what ul {
+			list-style-type: whatList;
+		}
+	}
+}
+
+@media (min-width: 80em) {
+	#aboutWrapper {
+		#aboutGrid {
+			display: grid;
+			align-items: unset;
+			grid-template-areas:
+				"who what"
+				"where where"
+				"email email";
+			grid-template-columns: 1fr 1fr;
+			grid-template-rows: auto auto 1fr;
+			padding: 1em 2.5em 1.5em;
+			gap: 2em;
+
+			#who ul {
+				list-style-type: whoList;
+			}
+
+			#what {
+				grid-area: what;
+			}
+			#where {
+				grid-area: where;
+			}
+			#who {
+				grid-area: who;
+			}
+
+			#who,
+			#what {
+				display: flex;
+				flex-direction: column;
+				flex-wrap: nowrap;
+			}
+
+			ul {
+				flex-grow: 1;
+				display: flex;
+				flex-direction: column;
+				flex-wrap: nowrap;
+				justify-content: space-around;
+			}
+		}
+	}
+}
