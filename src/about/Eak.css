@@ -9,6 +9,7 @@
 	flex-wrap: wrap;
 	justify-content: center;
 	gap: 0 0.3em;
+	padding-block: 0.4em;
 	transition:
 		gap 750ms ease-in-out,
 		height 350ms;
