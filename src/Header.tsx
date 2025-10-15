@@ -1,21 +1,20 @@
 import "./Header.css";
-import {Link} from "react-router";
 
 function Header() {
 	return (
 		<header>
-			<Link to="/">
+			<a href="/">
 				<img
 					src="/src/assets/eak.svg"
 					alt="The initials E.A.K, with E and K rotated and aligned to neatly overlap with the A inbetween"
 				/>
-			</Link>
-			<Link to="/#portfolio">
+			</a>
+			<a href="/#portfolio">
 				<div>PORTFOLIO</div>
-			</Link>
-			<Link to="/#contact">
+			</a>
+			<a href="/#contact">
 				<div>CONTACT</div>
-			</Link>
+			</a>
 		</header>
 	);
 }

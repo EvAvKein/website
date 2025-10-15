@@ -10,6 +10,8 @@ header {
 	background-color: var(--backgroundSubColor);
 	box-shadow: 0 0 0.25em 0.1em black;
 	z-index: 999;
+	position: sticky;
+	top: 0;
 
 	a {
 		text-decoration: none;
