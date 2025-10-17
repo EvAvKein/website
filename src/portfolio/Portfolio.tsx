@@ -49,7 +49,7 @@ function Portfolio() {
 			</section>
 			<section id="collapsedProjects" className={showMoreProjects ? "open" : ""}>
 				<button onClick={() => setShowMoreProjects(!showMoreProjects)}>
-					...plus older frontend & fullstack web projects, 01.2021-05.2024
+					...plus older frontend & fullstack web projects, 12.2021-05.2024
 				</button>
 				<div inert={!showMoreProjects}>
 					{moreListProjects.map((proj: ListProject) => {
