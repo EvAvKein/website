@@ -1,4 +1,3 @@
-import type {techsSet} from "./techs";
 import "./ProjItem.css";
 
 function ProjItem(props: {
@@ -8,7 +7,6 @@ function ProjItem(props: {
 	description: string;
 	technologies: string;
 	link: string | undefined;
-	selectedTechs: techsSet;
 }) {
 	return (
 		<a href={props.link} className="projItem">

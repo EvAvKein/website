@@ -1,5 +1,6 @@
-import "./Portfolio.css";
+import {useState} from "react";
 import ProjectDisplay from "./ProjectDisplay";
+import ProjItem from "./ProjItem";
 import {
 	DisplayProject,
 	displayProjects,
@@ -7,9 +8,11 @@ import {
 	listProjects,
 	moreListProjects,
 } from "./projects";
-import ProjItem from "./ProjItem";
+import "./Portfolio.css";
 
 function Portfolio() {
+	const [showMoreProjects, setShowMoreProjects] = useState<boolean>(false);
+
 	return (
 		<section id="portfolio">
 			<h2>Projects</h2>
@@ -40,20 +43,15 @@ function Portfolio() {
 							description={proj.description}
 							technologies={proj.technologies}
 							link={proj.link}
-							selectedTechs={new Set()}
 						/>
 					);
 				})}
 			</section>
-			<section id="collapsedProjects">
-				<button
-					onClick={(event: React.MouseEvent<HTMLButtonElement>) => {
-						event.currentTarget.classList.toggle("open");
-					}}
-				>
-					Frontend & fullstack web projects, 01.2021-05.2024
+			<section id="collapsedProjects" className={showMoreProjects ? "open" : ""}>
+				<button onClick={() => setShowMoreProjects(!showMoreProjects)}>
+					...plus frontend & fullstack web projects, 01.2021-05.2024
 				</button>
-				<div>
+				<div inert={!showMoreProjects}>
 					{moreListProjects.map((proj: ListProject) => {
 						return (
 							<ProjItem
@@ -64,7 +62,6 @@ function Portfolio() {
 								description={proj.description}
 								technologies={proj.technologies}
 								link={proj.link}
-								selectedTechs={new Set()}
 							/>
 						);
 					})}
