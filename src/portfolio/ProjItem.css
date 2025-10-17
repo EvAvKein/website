@@ -44,8 +44,6 @@
 		width: fit-content;
 		font-size: 0.7em;
 		color: var(--textSubColor);
-		/* text-decoration: underline dashed var(--textSubColor) 0.05em;
-		text-underline-offset: 0.3em; */
 	}
 
 	p {
