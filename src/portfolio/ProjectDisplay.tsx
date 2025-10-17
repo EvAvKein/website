@@ -9,7 +9,6 @@ function ProjectDisplay(props: {
 	imgAlt: string;
 	vidSrc: string | undefined;
 	techsList: techsSet;
-	selectedTechs: techsSet;
 	link: string | undefined;
 }) {
 	return (
@@ -38,7 +37,6 @@ function ProjectDisplay(props: {
 								key={tech}
 								techName={tech}
 								techSrc={`/src/assets/techs/${tech.replaceAll(" ", "").toLowerCase()}.svg`}
-								selectedTechs={props.selectedTechs}
 							/>
 						);
 					})}
