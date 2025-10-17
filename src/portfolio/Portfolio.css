@@ -40,7 +40,7 @@
 			font-size: 1.15em;
 			font-weight: bold;
 			max-width: clamp(15em, 90vw, 40em);
-			padding-block: 0.5em;
+			padding: 0.5em 0.75em;
 			color: inherit;
 			background-color: var(--backgroundColor);
 			box-shadow: 0 0 0.15em 0.05em black;
