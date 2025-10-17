@@ -1,0 +1,58 @@
+.projItem {
+	color: var(--textColor);
+	background-color: var(--backgroundColor);
+	text-decoration: none;
+	padding: 0.5em 0.75em;
+	border-radius: 0.25em;
+	width: 35em;
+	box-shadow: 0 0 0.15em 0.05em black;
+	display: grid;
+	grid-template-columns: min-content 1fr;
+	grid-template-rows: min-content min-content min-content;
+	grid-template-areas:
+		"logo name"
+		"logo techs"
+		"description description";
+	transition: all 300ms ease-in-out;
+
+	&:not(#specificityIncrease):not([href]) {
+		opacity: 0.6;
+		cursor: not-allowed;
+	}
+
+	&[href]:hover,
+	&[href]:focus {
+		transform: scale(1.05);
+		filter: drop-shadow(0 0 0.25em var(--highlightColor));
+	}
+
+	& img {
+		grid-area: logo;
+		height: 2.5em;
+		width: auto;
+		margin-right: 0.3em;
+		align-self: center;
+	}
+
+	h3 {
+		grid-area: name;
+		font-size: 1.25em;
+	}
+
+	.projectTechs {
+		grid-area: techs;
+		width: fit-content;
+		font-size: 0.7em;
+		color: var(--textSubColor);
+		/* text-decoration: underline dashed var(--textSubColor) 0.05em;
+		text-underline-offset: 0.3em; */
+	}
+
+	p {
+		grid-area: description;
+		font-size: 0.8em;
+		align-self: center;
+		padding-top: 0.1em;
+		white-space: pre-wrap;
+	}
+}
