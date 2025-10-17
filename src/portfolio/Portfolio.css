@@ -39,7 +39,7 @@
 		> button {
 			font-size: 1.15em;
 			font-weight: bold;
-			width: 40em;
+			max-width: clamp(15em, 90vw, 40em);
 			padding-block: 0.5em;
 			color: inherit;
 			background-color: var(--backgroundColor);
