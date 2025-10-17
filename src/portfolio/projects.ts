@@ -128,7 +128,7 @@ export const listProjects: ListProject[] = [
 		"My personal & portfolio website",
 		"/src/assets/eak.svg",
 		"The initials E.A.K, with E & K aligned and rotated to neatly overlap with the A inbetween",
-		"SvelteKit, TypeScript, Vercel",
+		"React, TypeScript, Vercel",
 		"https://github.com/EvAvKein/website",
 	),
 ];
