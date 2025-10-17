@@ -1,5 +1,7 @@
 :root {
 	scroll-behavior: smooth;
+	--headerHeight: 4em;
+	scroll-padding-top: calc(1em + var(--headerHeight));
 }
 
 * {
@@ -37,8 +39,6 @@ body {
 	--highlightColor: #f5cb32;
 	--filterToHighlightColor: brightness(0) saturate(100%) invert(80%) sepia(40%) saturate(769%)
 		hue-rotate(356deg) brightness(97%) contrast(97%);
-
-	--headerHeight: 4em;
 
 	color: var(--textColor);
 	font-family: "Fira Code", monospace;
