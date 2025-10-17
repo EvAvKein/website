@@ -1,6 +1,12 @@
 import "./Portfolio.css";
 import ProjectDisplay from "./ProjectDisplay";
-import {DisplayProject, displayProjects, ListProject, listProjects} from "./projects";
+import {
+	DisplayProject,
+	displayProjects,
+	ListProject,
+	listProjects,
+	moreListProjects,
+} from "./projects";
 import ProjItem from "./ProjItem";
 
 function Portfolio() {
@@ -38,6 +44,31 @@ function Portfolio() {
 						/>
 					);
 				})}
+			</section>
+			<section id="collapsedProjects">
+				<button
+					onClick={(event: React.MouseEvent<HTMLButtonElement>) => {
+						event.currentTarget.classList.toggle("open");
+					}}
+				>
+					Frontend & fullstack web projects, 01.2021-05.2024
+				</button>
+				<div>
+					{moreListProjects.map((proj: ListProject) => {
+						return (
+							<ProjItem
+								key={proj.name}
+								logoSrc={proj.logoSrc}
+								logoAlt={proj.logoAlt}
+								name={proj.name}
+								description={proj.description}
+								technologies={proj.technologies}
+								link={proj.link}
+								selectedTechs={new Set()}
+							/>
+						);
+					})}
+				</div>
 			</section>
 		</section>
 	);
