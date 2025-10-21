@@ -26,16 +26,12 @@
 		transition: all 250ms ease-in-out;
 	}
 
-	&.selected img,
-	&:hover img,
-	&:focus-within img {
+	&:is(:hover, :focus-within) img {
 		transform: scale(0.8) translateY(-0.35em);
 		filter: drop-shadow(0 0 0.35em var(--highlightColor));
 	}
 
-	&.selected div,
-	&:hover div,
-	&:focus-within div {
+	&:is(:hover, :focus-within) div {
 		opacity: 1;
 	}
 }
