@@ -4,7 +4,7 @@ import "./Contact.css";
 function Contact() {
 	return (
 		<section id="contact">
-			<h2>Contact</h2>
+			<h2>Feel free to reach out! ~</h2>
 			<div>
 				<ContactItem
 					logoSrc="/src/assets/email.svg"
