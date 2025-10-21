@@ -36,7 +36,7 @@ function ProjectDisplay(props: {
 							<TechItem
 								key={tech}
 								techName={tech}
-								techSrc={`./assets/techs/${tech.replaceAll(" ", "").toLowerCase()}.svg`}
+								techSrc={`./src/assets/techs/${tech.replaceAll(" ", "").toLowerCase()}.svg`}
 							/>
 						);
 					})}
