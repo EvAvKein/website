@@ -1,0 +1,27 @@
+.contactItem {
+	background-color: var(--backgroundColor);
+	padding: 0.5em;
+	border-radius: 0.5em;
+	display: flex;
+	align-items: center;
+	gap: 0.5em;
+	text-decoration: none;
+	transition: all 150ms ease-in-out;
+
+	img {
+		height: 1.75em;
+		width: 1.75em;
+		filter: var(--filterToTextColor);
+	}
+
+	span {
+		font-size: 1.1em;
+		color: var(--textColor);
+		/* text-decoration: underline solid color-mix(in srgb, var(--textSubColor), transparent 90%); */
+	}
+
+	&:is(:hover, :focus) {
+		filter: drop-shadow(0 0 0.125em var(--highlightColor));
+		transform: scale(1.025);
+	}
+}
