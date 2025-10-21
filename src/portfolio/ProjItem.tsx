@@ -1,3 +1,4 @@
+import {assetSrc} from "../assets";
 import "./ProjItem.css";
 
 function ProjItem(props: {
@@ -10,7 +11,7 @@ function ProjItem(props: {
 }) {
 	return (
 		<a href={props.link} className="projItem">
-			<img src={props.logoSrc} alt={props.logoAlt} />
+			<img src={assetSrc(props.logoSrc)} alt={props.logoAlt} />
 			<h3>{props.name}</h3>
 			<div className="projectTechs">{props.technologies}</div>
 			<p>{props.description}</p>

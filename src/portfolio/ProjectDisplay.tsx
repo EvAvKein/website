@@ -1,3 +1,4 @@
+import {assetSrc} from "../assets.ts";
 import {type techsSet} from "./techs";
 import TechItem from "./TechItem.tsx";
 import "./ProjectDisplay.css";
@@ -13,7 +14,7 @@ function ProjectDisplay(props: {
 }) {
 	return (
 		<a className="projDisplay" href={props.link}>
-			<img src={props.imgSrc} alt={props.imgAlt} />
+			<img src={assetSrc(props.imgSrc)} alt={props.imgAlt} />
 			<video
 				loop
 				muted
@@ -21,9 +22,9 @@ function ProjectDisplay(props: {
 				disablePictureInPicture
 				playsInline
 				crossOrigin="anonymous"
-				src={props.vidSrc}
+				src={assetSrc(props.vidSrc || "")}
 				preload={"auto"}
-				poster={props.imgSrc}
+				poster={assetSrc(props.imgSrc)}
 			>
 				<track kind="captions" />
 			</video>
@@ -32,13 +33,7 @@ function ProjectDisplay(props: {
 				<p>{props.tagline}</p>
 				<section className="projTechList">
 					{Array.from(props.techsList).map((tech) => {
-						return (
-							<TechItem
-								key={tech}
-								techName={tech}
-								techSrc={`./assets/techs/${tech.replaceAll(" ", "").toLowerCase()}.svg`}
-							/>
-						);
+						return <TechItem key={tech} tech={tech} />;
 					})}
 				</section>
 			</div>

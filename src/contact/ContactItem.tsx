@@ -1,3 +1,4 @@
+import {assetSrc} from "../assets";
 import {useEffect, useState} from "react";
 import "./ContactItem.css";
 
@@ -13,7 +14,7 @@ function ContactItem(props: {logoSrc: string; logoAlt: string; text: string; url
 
 	return (
 		<a className="contactItem" href={urlMounted} target="_blank">
-			<img src={props.logoSrc} alt={props.logoAlt} />
+			<img src={assetSrc(props.logoSrc)} alt={props.logoAlt} />
 			<span>{textMounted}</span>
 		</a>
 	);
