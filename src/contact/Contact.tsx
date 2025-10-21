@@ -7,8 +7,8 @@ function Contact() {
 			<h2>Feel free to reach out! ~</h2>
 			<div>
 				<ContactItem
-					logoSrc="/src/assets/email.svg"
-					logoAlt="Email icon"
+					logoSrc="/src/assets/contact.svg"
+					logoAlt="Letter icon"
 					text="evavkein@gmail.com"
 					url="mailto:evavkein@gmail.com"
 				/>
