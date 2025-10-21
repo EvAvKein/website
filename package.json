@@ -6,9 +6,9 @@
 	"scripts": {
 		"dev": "vite",
 		"build": "tsc -b && vite build",
-		"serve": "npm run build && npm run host",
-		"lint": "eslint .",
 		"preview": "vite preview",
+		"serve": "npm run build && npm run preview",
+		"lint": "eslint .",
 		"prettier": "prettier --write ."
 	},
 	"dependencies": {
