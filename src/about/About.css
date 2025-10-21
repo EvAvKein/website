@@ -11,6 +11,8 @@
 }
 
 #aboutWrapper {
+	min-height: calc(100vh - var(--headerHeight));
+
 	#aboutGrid {
 		max-width: 80em;
 		display: flex;
