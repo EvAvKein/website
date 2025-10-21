@@ -53,6 +53,14 @@ body {
 		outline: none;
 	}
 
+	> main > hr {
+		max-width: 97.5%;
+		height: 0.05rem;
+		margin: 0 auto;
+		border: none;
+		background-color: color-mix(in srgb, var(--textSubColor), var(--backgroundColor) 70%);
+	}
+
 	img {
 		pointer-events: none;
 		user-select: none;
