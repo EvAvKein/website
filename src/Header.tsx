@@ -5,7 +5,7 @@ function Header() {
 		<header>
 			<a href="#">
 				<img
-					src="/src/assets/eak.svg"
+					src="./src/assets/eak.svg"
 					alt="The initials E.A.K, with E and K rotated and aligned to neatly overlap with the A inbetween"
 				/>
 			</a>
