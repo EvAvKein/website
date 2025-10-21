@@ -15,7 +15,7 @@ function Portfolio() {
 
 	return (
 		<section id="portfolio">
-			<h2>Projects</h2>
+			<h2>Software Projects</h2>
 			<section id="projDisplays">
 				{displayProjects.map((proj: DisplayProject) => {
 					return (
