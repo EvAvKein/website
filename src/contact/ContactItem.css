@@ -17,11 +17,10 @@
 	span {
 		font-size: 1.1em;
 		color: var(--textColor);
-		/* text-decoration: underline solid color-mix(in srgb, var(--textSubColor), transparent 90%); */
 	}
 
 	&:is(:hover, :focus) {
-		filter: drop-shadow(0 0 0.125em var(--highlightColor));
+		background-color: var(--backgroundSubColor);
 		transform: scale(1.025);
 	}
 }
