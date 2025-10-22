@@ -1,3 +1,22 @@
+#skipToContent {
+	position: absolute;
+	display: block;
+	top: 0em;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 900;
+	transition: top 150ms ease-in-out;
+	color: var(--textColor);
+	background-color: var(--backgroundSubColor);
+	padding: 0.5em 1em;
+	text-decoration: none;
+	box-shadow: 0 0 0.2em 0.05em var(--highlightColor);
+
+	&:focus {
+		top: calc(var(--headerHeight) + 0.05em);
+	}
+}
+
 header {
 	font-family: "Share Tech Mono", monospace;
 	width: 100%;

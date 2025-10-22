@@ -43,6 +43,7 @@ body {
 	color-scheme: dark;
 	font-family: "Fira Code", monospace;
 
+	position: relative;
 	min-height: inherit;
 	min-width: inherit;
 	color: var(--textColor);
