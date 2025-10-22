@@ -40,11 +40,12 @@ body {
 	--filterToHighlightColor: brightness(0) saturate(100%) invert(80%) sepia(40%) saturate(769%)
 		hue-rotate(356deg) brightness(97%) contrast(97%);
 
-	color: var(--textColor);
+	color-scheme: dark;
 	font-family: "Fira Code", monospace;
 
 	min-height: inherit;
 	min-width: inherit;
+	color: var(--textColor);
 	background-color: var(--backgroundColor);
 	transition: font-size 300ms ease;
 	scroll-behavior: smooth;
