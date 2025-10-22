@@ -11,14 +11,12 @@
 }
 
 #aboutWrapper {
-	min-height: calc(100vh - var(--headerHeight));
-
 	#aboutGrid {
 		max-width: 80em;
 		display: flex;
 		flex-direction: column;
 		margin-inline: auto;
-		padding: 0.5em 1.5em 1em;
+		padding: 0.5em 1.5em 2em;
 		gap: 1.5em;
 
 		#who,
@@ -68,7 +66,7 @@
 				"who what"
 				"where where";
 			grid-template-columns: 1fr 1fr;
-			padding: 1em 2.5em 1.5em;
+			padding: 1em 2.5em 2.5em;
 			gap: 2em;
 
 			#who ul {
