@@ -16,7 +16,7 @@ function About() {
 							Progressive <div>(vegan, accessibility-minded, etc)</div>
 						</li>
 						<li>
-							Neuroatypical <div>(triple-diagnosed - few support needs, many advantages)</div>
+							Neurodivergent <div>(triple-diagnosed - few support needs, many advantages)</div>
 						</li>
 						<li>Senior gen-Z</li>
 					</ul>
