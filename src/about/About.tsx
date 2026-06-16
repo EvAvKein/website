@@ -15,9 +15,6 @@ function About() {
 						<li>
 							Progressive <div>(vegan, accessibility-minded, etc)</div>
 						</li>
-						<li>
-							Neurodivergent <div>(triple-diagnosed - few support needs, many advantages)</div>
-						</li>
 						<li>Senior gen-Z</li>
 					</ul>
 				</section>
@@ -26,16 +23,13 @@ function About() {
 					<h2>What?</h2>
 					<ul>
 						<li>
-							Programming <div>(e.g. web, C++, Linux, Vim)</div>
+							Programming <div>(fullstack web, C++, Linux)</div>
 						</li>
 						<li>
-							Humanities <div>(e.g. communications, philosophy, equity)</div>
+							Community-building <div>(volunteering, organizing, supporting)</div>
 						</li>
 						<li>
-							Community-building <div>(e.g. volunteering, organizing, supporting)</div>
-						</li>
-						<li>
-							Recurring hobbies <div>(e.g. video-games, crocheting, sci-fi, D&D, music)</div>
+							Recurring hobbies <div>(sci-fi, D&D, video-games, music, miscellaneous design)</div>
 						</li>
 					</ul>
 				</section>
@@ -43,8 +37,7 @@ function About() {
 				<section id="where">
 					<h2>Where?</h2>
 					<p>
-						Finland since summer 2023 - currently studying at Hive Helsinki, leading Hive's student
-						association, and open to other opportunities!
+						Finland since summer 2023. Recently graduated out of Hive Helsinki and looking for a new opportunities! ~
 					</p>
 				</section>
 			</section>

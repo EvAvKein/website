@@ -1,12 +1,12 @@
 @counter-style whoList {
 	system: fixed;
-	symbols: "👨‍🦲" "🌱" "🧠" "🧑‍💻";
+	symbols: "👨‍🦲" "🌱" "🧑‍💻";
 	suffix: " ";
 }
 
 @counter-style whatList {
 	system: fixed;
-	symbols: "💻" "🤝" "🫂" "🧶";
+	symbols: "🤖" "🫂" "🧶";
 	suffix: " ";
 }
 
@@ -35,7 +35,7 @@
 			ul {
 				margin: 0;
 
-				li + li {
+				li+li {
 					margin-top: 0.75em;
 				}
 
@@ -59,6 +59,8 @@
 
 @media (min-width: 80em) {
 	#aboutWrapper {
+		padding-top: 2rem;
+
 		#aboutGrid {
 			display: grid;
 			align-items: unset;
@@ -69,16 +71,35 @@
 			padding: 1em 2.5em 2.5em;
 			gap: 2em;
 
-			#who ul {
-				list-style-type: whoList;
+			#who,
+			#what,
+			#where {
+				h2 {
+					margin-bottom: 0.5em;
+				}
+			}
+
+			#who,
+			#what {
+				ul {
+					li div {
+						margin-top: 0.3em
+					}
+
+					li+li {
+						margin-top: 1em;
+					}
+				}
 			}
 
 			#what {
 				grid-area: what;
 			}
+
 			#where {
 				grid-area: where;
 			}
+
 			#who {
 				grid-area: who;
 			}
