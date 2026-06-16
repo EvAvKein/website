@@ -1,3 +1,4 @@
+import {NavLink, Link} from "react-router-dom";
 import eakLogo from "./assets/eak.svg";
 import "./Header.css";
 
@@ -8,18 +9,18 @@ function Header() {
 				<div>Skip to content</div>
 			</a>
 			<header>
-				<a href="#">
+				<Link to="/">
 					<img
 						src={eakLogo}
 						alt="The initials E.A.K, with E and K rotated and aligned to neatly overlap with the A inbetween"
 					/>
-				</a>
-				<a href="#portfolio">
+				</Link>
+				<NavLink to="/portfolio" className={({isActive}) => (isActive ? "active" : undefined)}>
 					<div>PORTFOLIO</div>
-				</a>
-				<a href="#contact">
+				</NavLink>
+				<NavLink to="/contact" className={({isActive}) => (isActive ? "active" : undefined)}>
 					<div>CONTACT</div>
-				</a>
+				</NavLink>
 			</header>
 		</>
 	);

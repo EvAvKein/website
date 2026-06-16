@@ -10,7 +10,7 @@
 	suffix: " ";
 }
 
-#aboutWrapper {
+#about {
 	#aboutGrid {
 		max-width: 80em;
 		display: flex;
@@ -35,7 +35,7 @@
 			ul {
 				margin: 0;
 
-				li+li {
+				li + li {
 					margin-top: 0.75em;
 				}
 
@@ -58,7 +58,7 @@
 }
 
 @media (min-width: 80em) {
-	#aboutWrapper {
+	#about {
 		padding-top: 2rem;
 
 		#aboutGrid {
@@ -83,10 +83,10 @@
 			#what {
 				ul {
 					li div {
-						margin-top: 0.3em
+						margin-top: 0.3em;
 					}
 
-					li+li {
+					li + li {
 						margin-top: 1em;
 					}
 				}

@@ -3,7 +3,7 @@ import "./About.css";
 
 function About() {
 	return (
-		<div id="aboutWrapper">
+		<div id="about">
 			<Eak />
 			<section id="aboutGrid">
 				<section id="who">
@@ -37,7 +37,8 @@ function About() {
 				<section id="where">
 					<h2>Where?</h2>
 					<p>
-						Finland since summer 2023. Recently graduated out of Hive Helsinki and looking for a new opportunities! ~
+						Finland since summer 2023. Recently graduated out of Hive Helsinki and looking for a new
+						opportunities! ~
 					</p>
 				</section>
 			</section>
