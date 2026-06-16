@@ -1,3 +1,5 @@
+// Components use simple asset paths like "projects/foo.png", but Vite renames
+// those files when bundling. This module resolves those paths to Vite's URLs.
 const globImports: Record<string, string> = import.meta.glob("/src/assets/**", {
 	eager: true,
 	query: "?url",
