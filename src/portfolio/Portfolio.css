@@ -36,37 +36,35 @@
 		margin: auto;
 		transition: all 300ms ease-in-out;
 
-		> button {
+		>button {
 			font-size: 1.15em;
 			font-weight: bold;
 			max-width: clamp(15em, 90vw, 40em);
-			padding: 0.5em 0.75em;
 			color: inherit;
 			background-color: var(--backgroundColor);
-			box-shadow: 0 0 0.15em 0.05em black;
 			transition: inherit;
 
 			&:hover,
 			&:focus {
 				transform: scale(1.05);
-				filter: drop-shadow(0 0 0.25em var(--highlightColor));
 			}
 		}
 
 		&:not(.open) {
-			> button {
+			>button {
 				font-weight: unset;
 				font-size: unset;
-				opacity: 0.575; /* Basically the minimum opacity where the text color contrast gets a green/passing score */
+				opacity: 0.575;
+				/* Basically the minimum opacity where the text color contrast gets a green/passing score */
 			}
 
-			> div {
+			>div {
 				max-height: 0;
 				padding-block: 0;
 			}
 		}
 
-		> div {
+		>div {
 			max-height: 25em;
 			overflow-y: hidden;
 			padding-block: 1em;

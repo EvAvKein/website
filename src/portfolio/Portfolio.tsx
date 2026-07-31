@@ -1,4 +1,4 @@
-import {useState} from "react";
+import { useState } from "react";
 import ProjectDisplay from "./ProjectDisplay";
 import ProjItem from "./ProjItem";
 import {
@@ -49,7 +49,7 @@ function Portfolio() {
 			</section>
 			<section id="collapsedProjects" className={showMoreProjects ? "open" : ""}>
 				<button onClick={() => setShowMoreProjects(!showMoreProjects)}>
-					...plus older frontend & fullstack web projects, 12.2021-05.2024
+					...plus older frontend & fullstack web projects, 2021-2023
 				</button>
 				<div inert={!showMoreProjects}>
 					{moreListProjects.map((proj: ListProject) => {

@@ -1,4 +1,4 @@
-import type {tech, techsSet} from "./techs";
+import type { tech, techsSet } from "./techs";
 
 export const projectCategories = ["Fullstack", "Frontend", "Systems"] as const;
 
@@ -61,8 +61,17 @@ export class ListProject extends AbstractProject {
 
 export const displayProjects: DisplayProject[] = [
 	new DisplayProject(
-		"MiniRayTracer",
-		"Raytracing your scenes from scratch: Texture mapping, multi-threaded incremental rendering, live movement and object manipulation, and more!",
+		"DiffEd",
+		"Real-time collaborative code editor: Live unified diffs between peers, chunk-level diff merging, rich editor, conflict-free through Operational Transformation",
+		"assets/projects/diffEd_compilation.mp4",
+		"assets/projects/diffEd.png",
+		"Two stacked DiffEd editors, each showing one collaborator's live unified diff against the other on the same TypeScript FizzBuzz file: one holds an if/else chain, the other a call to a wordFor() helper, so each pane highlights its peer's version green as additions and its own red as deletions, beside an Accept button",
+		new Set<tech>(["TypeScript", "React", "Express", "PostgreSQL", "Docker"]),
+		"https://github.com/EvAvKein/DiffEd",
+	),
+	new DisplayProject(
+		"Raytracer",
+		"Rendering scenes pixel by pixel: Texture mapping, multi-threaded incremental processing, live movement and object manipulation, robust scene file parsing",
 		"assets/projects/miniRT_compilation.mp4",
 		"https://raw.githubusercontent.com/EvAvKein/hive_minirt/refs/heads/main/README_assets/eve_wallpaper.png",
 		"Colorful scene with patterned spheres, cylinders, planes, a cone, and a light source in the center shedding light on all of them",
@@ -70,32 +79,50 @@ export const displayProjects: DisplayProject[] = [
 		"https://github.com/EvAvKein/hive_minirt",
 	),
 	new DisplayProject(
-		"Planet Guardian",
-		"A game-jam award winner: Protect your planet from asteroids and temperatures!",
-		"assets/projects/planetGuardian_compilation.mp4",
-		"assets/projects/planetGuardian.png",
-		"Colorful scene with patterned spheres, cylinders, planes, a cone, and a light source in the center shedding light on all of them",
-		new Set<tech>(["C"]),
-		"https://github.com/EvAvKein/planet_guardian",
+		"Fortytwode",
+		"Data exporter and profile host for 42 Network students: OAuth, live query progress, raw & curated JSON output, intuitive data view, granular visibility settings",
+		"assets/projects/fortytwode_compilation.mp4",
+		"assets/projects/fortytwode.png",
+		"The Fortytwode web app showing a 42 student profile: Avatar, name, level, campus and coalition, above collapsible sections for projects, evaluations, and achievements",
+		new Set<tech>(["Go", "PostgreSQL", "Docker"]),
+		"https://github.com/EvAvKein/Fortytwode",
 	),
 	new DisplayProject(
-		"So Long",
-		"A 2D game made with a minimalist windowing library: Collect the berries and reach the exit! Steppable flood-fill map validation, defeatable chasing enemies",
-		"assets/projects/soLong_compilation.mp4",
-		"assets/projects/soLong.png",
-		"Colorful scene with patterned spheres, cylinders, planes, a cone, and a light source in the center shedding light on all of them",
-		new Set<tech>(["C"]),
-		"https://github.com/EvAvKein/hive_so_long",
+		"IRC Serv",
+		"Standards-compliant IRC server: A single non-blocking event loop, buffered handling of fragmented input, file transfers, a channel-moderating bot",
+		"assets/projects/ftIrc_compilation.mp4",
+		"assets/projects/ftIrc.png",
+		"Terminal running the Irssi IRC client, connected to a local server. Several users chatting in a channel, one of them kicked by a channel operator and then rejoining",
+		new Set<tech>(["C++"]),
+		"https://github.com/EvAvKein/hive_ft_irc",
 	),
 	new DisplayProject(
 		"Philosophers",
-		"Simulating the Dining Philosophers problem: Manual multi-threading synchronization with mutexes",
+		"Simulating the Dining Philosophers problem: Manual multi-threading synchronization via mutexes, deadlock-free resource acquisition, color-coded logs",
 		"assets/projects/philosophers_compilation.mp4",
 		"assets/projects/philosophers.png",
-		"Colorful scene with patterned spheres, cylinders, planes, a cone, and a light source in the center shedding light on all of them",
+		"Terminal output of the simulation, listing millisecond timestamps beside numbered philosophers taking forks, eating, sleeping, and thinking",
 		new Set<tech>(["C"]),
 		"https://github.com/EvAvKein/hive_philosophers",
 	),
+	new DisplayProject(
+		"Planet Guardian",
+		"Game-jam award winner where you only press <space>: Protect your planet from asteroids and temperatures!",
+		"assets/projects/planetGuardian_compilation.mp4",
+		"assets/projects/planetGuardian.png",
+		"Pixel-art scene of space with an Earth-like planet at the center, shielded by a glowing arc, surrounded by a starfield and incoming asteroids, with a health bar in the corner",
+		new Set<tech>(["C"]),
+		"https://github.com/EvAvKein/planet_guardian",
+	),
+	// new DisplayProject(
+	// 	"Minishell",
+	// 	"Command-line shell: Readline-powered prompt with history, pipes and I/O redirections, quote-aware parsing with env variable expansion, builtin commands, signal handling, optional parser visualization",
+	// 	"assets/projects/minishell_compilation.mp4",
+	// 	"assets/projects/minishell.png",
+	// 	"Terminal with a colorful custom shell prompt, running a piped command with input and output redirection, followed by a linked-list visualization of the parsed command breaking it down into INFILE, COMMAND, and OUTFILE nodes",
+	// 	new Set<tech>(["C"]),
+	// 	"https://github.com/EvAvKein/hive_minishell",
+	// ),
 ];
 
 export const listProjects: ListProject[] = [

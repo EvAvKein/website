@@ -13,6 +13,7 @@ export const techs = [
 	"Express",
 	"C",
 	"C++",
+	"Go",
 	"GDB",
 	"Jest",
 	"Playwright",
