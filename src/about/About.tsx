@@ -37,7 +37,7 @@ function About() {
 				<section id="where">
 					<h2>Where?</h2>
 					<p>
-						Finland since summer 2023. Recently graduated out of Hive Helsinki and looking for a new
+						Finland since summer 2023. Recently graduated out of Hive Helsinki and looking for new
 						opportunities! ~
 					</p>
 				</section>
